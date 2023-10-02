@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2b1d14"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="334dp"
+        android:layout_height="505dp"
+        android:translationY="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/BtSuma"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:onClick="agregarOperador"
+                android:text="+" />
+
+            <Button
+                android:id="@+id/BtResta"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:onClick="agregarOperador"
+                android:text="-" />
+
+            <Button
+                android:id="@+id/BtBorrar"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:onClick="borrar"
+                android:text="C" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/BtMultiplicacion"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:onClick="agregarOperador"
+                android:text="x" />
+
+            <Button
+                android:id="@+id/BtDivision"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:onClick="agregarOperador"
+                android:text="/" />
+
+            <Button
+                android:id="@+id/BtResultado"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:onClick="calcular"
+                android:text="=" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/BtUno"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:onClick="agregar"
+                android:text="1" />
+
+            <Button
+                android:id="@+id/BtDos"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:onClick="agregar"
+                android:text="2" />
+
+            <Button
+                android:id="@+id/BtTres"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:onClick="agregar"
+                android:text="3" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/BtCuatro"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:onClick="agregar"
+                android:text="4" />
+
+            <Button
+                android:id="@+id/BtCinco"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:onClick="agregar"
+                android:text="5" />
+
+            <Button
+                android:id="@+id/BtSeis"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:onClick="agregar"
+                android:text="6" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/BtSiete"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:onClick="agregar"
+                android:text="7" />
+
+            <Button
+                android:id="@+id/BtOcho"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:onClick="agregar"
+                android:text="8" />
+
+            <Button
+                android:id="@+id/BtNueve"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:onClick="agregar"
+                android:text="9" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/BtCero"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:onClick="agregar"
+                android:text="0" />
+
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/TxCampo"
+        android:layout_width="319dp"
+        android:layout_height="101dp"
+        android:background="#ffff"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="50sp"
+        android:translationY="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
